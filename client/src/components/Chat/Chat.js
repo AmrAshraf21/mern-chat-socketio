@@ -16,7 +16,7 @@ function Chat() {
   const [users, setUsers] = useState("");
   const [messages, setMessages] = useState([]);
   const [message, setMessage] = useState("");
-  const END_POINT = `localhost:5000`;
+  const END_POINT = `https://socketio-g132.onrender.com/`;
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
     socket = io(END_POINT);
